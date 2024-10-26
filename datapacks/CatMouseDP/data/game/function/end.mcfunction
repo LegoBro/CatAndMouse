@@ -1,7 +1,4 @@
 ## End Game
-scoreboard players set #game_state var 0
+scoreboard players set #game_state var 3
 
-execute as @a[tag=cat] run function cat:unload
-execute as @a[tag=mouse] run function mouse:unload
-clear @a
-tp @a 0 100 0
+schedule function game:post/end 10s

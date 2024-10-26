@@ -16,3 +16,7 @@ tp @a[tag=mouse] 1093 42 -38
 
 # Time Set up
 scoreboard players operation #game_length var = game_length setting
+
+forceload add 1109 -95 890 91
+
+schedule function game:start 10s
