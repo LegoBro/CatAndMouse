@@ -12,3 +12,6 @@ scoreboard objectives add setting dummy
 
 # Scoreboard
 scoreboard objectives add scoreboard dummy
+
+execute as @a[gamemode=creative] at @s run playsound minecraft:entity.cat.ambient master @s ~ ~ ~ 1 1
+tellraw @a[gamemode=creative] "Reloaded Successfully"
