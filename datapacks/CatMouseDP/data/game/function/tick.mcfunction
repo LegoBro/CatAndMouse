@@ -6,7 +6,7 @@ execute store result score mice_left scoreboard if entity @a[tag=mouse]
 
 scoreboard players remove #game_length var 1
 scoreboard players operation #time_left var = #game_length var
-scoreboard players operation #time_left var = #20 var
+scoreboard players operation #time_left var /= #20 var
 scoreboard players operation time_left scoreboard = #time_left var
 
 # Win Conditions
