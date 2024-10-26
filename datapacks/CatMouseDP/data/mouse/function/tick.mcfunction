@@ -20,4 +20,4 @@
 
 function mouse:inventory
 
-execute if score rightClick var matches 1.. run function mouse:right_click
+execute if score @s rightClick matches 1.. run function mouse:right_click
