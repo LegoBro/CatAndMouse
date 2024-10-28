@@ -22,3 +22,6 @@ function cat:inventory
 
 execute store result score #cheese_pickup var run clear @s cookie 1
 execute if score #cheese_pickup var matches 1.. run function cat:pickup_cheese
+
+# Energy
+execute if score #second var matches 0 run function tick:player/xp

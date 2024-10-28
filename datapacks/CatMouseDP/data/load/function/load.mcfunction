@@ -15,6 +15,7 @@ scoreboard objectives add scoreboard dummy
 
 # Player values
 scoreboard objectives add rightClick minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add energy dummy
 
 execute as @a[gamemode=creative] at @s run playsound minecraft:entity.cat.ambient master @s ~ ~ ~ 1 1
 tellraw @a[gamemode=creative] "Reloaded Successfully"

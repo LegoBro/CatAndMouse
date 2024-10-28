@@ -2,9 +2,9 @@
 #Mouse Abilities
 #Basic Abilities
 #Nibble Attack: Inflicts very low damage to the Cat.
-#Hide: Grants temporary invisibility when stationary
 #Scramble this ability throws the mouse in a random direction
 #Tail spring get a jump boost
+#Hide: Grants temporary invisibility when stationary
 #Catnip Dropper drops catnip and signals your location but gives 1 cheese .
 
 #Trap Setting:
@@ -21,3 +21,6 @@
 function mouse:inventory
 
 execute if score @s rightClick matches 1.. run function mouse:right_click
+
+# Energy
+execute if score #second var matches 0 run function tick:player/xp
