@@ -38,3 +38,7 @@ execute if score @s eatCheese matches 1.. run function mouse:eat_cheese
 # Pickup Catnip
 execute store result score #catnip_pickup var run clear @s cod 1
 execute if score #catnip_pickup var matches 1.. run function mouse:pickup_catnip
+
+
+## Cat Fights
+execute if entity @e[type=item_display,tag=mouse_trap,distance=..1.5] run function cat:mouse_trap/trigger
