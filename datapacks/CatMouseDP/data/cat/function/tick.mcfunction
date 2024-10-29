@@ -20,9 +20,20 @@
 
 function cat:inventory
 
-execute store result score #cheese_pickup var run clear @s cookie 1
-execute if score #cheese_pickup var matches 1.. run function cat:pickup_cheese
+execute if score @s rightClick matches 1.. run function cat:right_click
+
 
 # Energy
 execute if score #second var matches 0 run scoreboard players add @s[scores={energy=..24}] energy 1
 execute if score #second var matches 0 run function tick:player/xp
+
+## Abilities
+# Pounce
+execute if entity @s[tag=pouncing] run function cat:pounce/waiting
+
+# Eat Catnip
+execute if score @s eatCatnip matches 1.. run function cat:eat_catnip
+
+# Pickup Cheese
+execute store result score #cheese_pickup var run clear @s cookie 1
+execute if score #cheese_pickup var matches 1.. run function cat:pickup_cheese

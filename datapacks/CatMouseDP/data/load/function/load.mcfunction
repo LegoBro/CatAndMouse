@@ -19,8 +19,11 @@ scoreboard objectives add energy dummy
 scoreboard objectives add posX dummy
 scoreboard objectives add posY dummy
 scoreboard objectives add posZ dummy
-scoreboard objectives add eatCheese minecraft.used:minecraft.cookie
-scoreboard objectives add eatCatnip minecraft.used:minecraft.cod
+    scoreboard objectives add eatCheese minecraft.used:minecraft.cookie
+
+    scoreboard objectives add eatCatnip minecraft.used:minecraft.cod
+    scoreboard objectives add jump minecraft.custom:minecraft.jump
+    scoreboard objectives add pouncing dummy
 
 # Teams
 team add Mouse
