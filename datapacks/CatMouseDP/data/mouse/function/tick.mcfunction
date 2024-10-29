@@ -22,9 +22,19 @@ function mouse:inventory
 
 execute if score @s rightClick matches 1.. run function mouse:right_click
 
+
+
 # Energy
 execute if score #second var matches 0 run scoreboard players add @s[scores={energy=..24}] energy 1
 execute if score #second var matches 0 run function tick:player/xp
 
+## Abilities
 # Invis
 execute if entity @s[tag=invis] run function mouse:invis
+
+# Eat Cheese
+execute if score @s eatCheese matches 1.. run function mouse:eat_cheese
+
+# Pickup Catnip
+execute store result score #catnip_pickup var run clear @s cod 1
+execute if score #catnip_pickup var matches 1.. run function mouse:pickup_catnip

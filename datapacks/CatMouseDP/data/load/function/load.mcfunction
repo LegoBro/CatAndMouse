@@ -19,7 +19,19 @@ scoreboard objectives add energy dummy
 scoreboard objectives add posX dummy
 scoreboard objectives add posY dummy
 scoreboard objectives add posZ dummy
+scoreboard objectives add eatCheese minecraft.used:minecraft.cookie
+scoreboard objectives add eatCatnip minecraft.used:minecraft.cod
 
+# Teams
+team add Mouse
+team modify Mouse color gray
+team modify Mouse nametagVisibility hideForOtherTeams
+team modify Mouse prefix "Mouse"
+
+team add Mouse
+team modify Mouse color gray
+team modify Mouse nametagVisibility hideForOtherTeams
+team modify Mouse prefix "Mouse"
 
 execute as @a[gamemode=creative] at @s run playsound minecraft:entity.cat.ambient master @s ~ ~ ~ 1 1
 tellraw @a[gamemode=creative] "Reloaded Successfully"
