@@ -23,6 +23,7 @@ function mouse:inventory
 execute if score @s rightClick matches 1.. run function mouse:right_click
 
 # Energy
+execute if score #second var matches 0 run scoreboard players add @s[scores={energy=..24}] energy 1
 execute if score #second var matches 0 run function tick:player/xp
 
 # Invis

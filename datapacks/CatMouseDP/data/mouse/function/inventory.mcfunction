@@ -1,11 +1,11 @@
 ## Updates mouse inventory
 item replace entity @s hotbar.0 with wooden_shovel[unbreakable={},custom_model_data=100,item_name='{"translate":"nibble"}'] 1
 
-item replace entity @s[scores={energy=5..}] hotbar.1 with carrot_on_a_stick[item_name='{"translate":"scramble"}',unbreakable={},custom_model_data=101] 1
-item replace entity @s[scores={energy=..4}] hotbar.1 with gray_dye[item_name='{"translate":"loading"}',unbreakable={},custom_model_data=101] 1
+item replace entity @s[scores={energy=7..}] hotbar.1 with carrot_on_a_stick[item_name='{"translate":"scramble"}',unbreakable={},custom_model_data=101] 1
+item replace entity @s[scores={energy=..6}] hotbar.1 with gray_dye[item_name='{"translate":"loading"}',unbreakable={},custom_model_data=101] 1
 
-item replace entity @s[scores={energy=7..}] hotbar.2 with carrot_on_a_stick[item_name='{"translate":"tail"}',unbreakable={},custom_model_data=102] 1
-item replace entity @s[scores={energy=..6}] hotbar.2 with gray_dye[item_name='{"translate":"loading"}',unbreakable={},custom_model_data=102] 1
+item replace entity @s[scores={energy=10..}] hotbar.2 with carrot_on_a_stick[item_name='{"translate":"tail"}',unbreakable={},custom_model_data=102] 1
+item replace entity @s[scores={energy=..9}] hotbar.2 with gray_dye[item_name='{"translate":"loading"}',unbreakable={},custom_model_data=102] 1
 
 item replace entity @s[scores={energy=15..}] hotbar.3 with carrot_on_a_stick[item_name='{"translate":"hide"}',unbreakable={},custom_model_data=103] 1
 item replace entity @s[scores={energy=..14}] hotbar.3 with gray_dye[item_name='{"translate":"loading"}',unbreakable={},custom_model_data=103] 1

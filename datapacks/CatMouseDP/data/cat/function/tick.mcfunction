@@ -24,4 +24,5 @@ execute store result score #cheese_pickup var run clear @s cookie 1
 execute if score #cheese_pickup var matches 1.. run function cat:pickup_cheese
 
 # Energy
+execute if score #second var matches 0 run scoreboard players add @s[scores={energy=..24}] energy 1
 execute if score #second var matches 0 run function tick:player/xp
