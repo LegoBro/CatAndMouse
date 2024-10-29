@@ -1,4 +1,5 @@
 ## Catnip
+scoreboard players set @s eatCheese 0
 scoreboard players remove @s energy 25
 give @s cookie[food={nutrition:1,saturation:1,can_always_eat:true}]
 effect give @s glowing 5 0 true
