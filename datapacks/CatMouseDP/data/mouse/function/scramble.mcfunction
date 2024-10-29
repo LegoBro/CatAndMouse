@@ -1,3 +1,4 @@
 ## Scramble
 scoreboard players remove @s energy 5
-effect give @s speed 3 1 true
+effect give @s speed 2 4 true
+particle poof ~ ~0.15 ~ 0.2 0.2 0.2 0.01 25 force

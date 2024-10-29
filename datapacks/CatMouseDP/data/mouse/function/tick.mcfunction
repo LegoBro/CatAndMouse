@@ -24,3 +24,6 @@ execute if score @s rightClick matches 1.. run function mouse:right_click
 
 # Energy
 execute if score #second var matches 0 run function tick:player/xp
+
+# Invis
+execute if entity @s[tag=invis] run function mouse:invis
