@@ -29,12 +29,12 @@ scoreboard objectives add posZ dummy
 team add Mouse
 team modify Mouse color gray
 team modify Mouse nametagVisibility hideForOtherTeams
-team modify Mouse prefix "Mouse"
+team modify Mouse prefix "Mouse "
 
 team add Cat
 team modify Cat color red
 team modify Cat nametagVisibility hideForOtherTeams
-team modify Cat prefix "Cat"
+team modify Cat prefix "Cat "
 
 execute as @a[gamemode=creative] at @s run playsound minecraft:entity.cat.ambient master @s ~ ~ ~ 1 1
 tellraw @a[gamemode=creative] "Reloaded Successfully"
