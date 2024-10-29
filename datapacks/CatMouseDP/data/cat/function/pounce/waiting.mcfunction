@@ -3,6 +3,8 @@
 #xp set @s 21 levels
 #execute if score @s pouncing matches ..34 run xp add @s 2 points
 
+scoreboard players add @s pouncing 1
+
 execute if score @s pouncing matches 2 run effect give @s slowness 2 0 true
 execute if score @s pouncing matches 2 run effect give @s jump_boost 2 2 true
 execute if score @s pouncing matches 2 run playsound minecraft:block.note_block.snare master @s ~ ~ ~ 1 1
