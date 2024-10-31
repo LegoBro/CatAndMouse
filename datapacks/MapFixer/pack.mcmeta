@@ -1,0 +1,6 @@
+{
+    "pack": {
+        "pack_format": 48,
+        "description": "Fixes flower pots, item frames, and other entities to prevent player interaction"
+    }
+}
