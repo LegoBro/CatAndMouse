@@ -10,4 +10,6 @@ execute store result storage fixer pos1[2] int 1 run scoreboard players get #fix
 
 tellraw @s [{"color":"aqua","text":"Corner 1 set to: "},{"interpret":false,"nbt":"pos1","storage":"fixer","color":"dark_aqua"}]
 
+tellraw @s [{"color":"yellow","text":"Set Corner 2", "underlined": true, "clickEvent":{"action": "run_command","value": "/function fixer:corner2"}}]
+
 function fixer:calculate_region
