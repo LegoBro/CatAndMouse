@@ -13,3 +13,6 @@ tellraw @s [{"color":"aqua","text":"Corner 1 set to: "},{"interpret":false,"nbt"
 tellraw @s [{"color":"yellow","text":"Set Corner 2", "underlined": true, "clickEvent":{"action": "run_command","value": "/function fixer:corner2"}}]
 
 function fixer:calculate_region
+
+kill @e[type=magma_cube,tag=fixer.corner1]
+summon magma_cube ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:1b,NoAI:1b,Size:1,Tags:["fixer.corner1"]}

@@ -13,3 +13,6 @@ tellraw @s [{"color":"aqua","text":"Corner 2 set to: "},{"interpret":false,"nbt"
 tellraw @s [{"color":"yellow","text":"4. Pick your iteration speed (default 100 blocks/tick)", "underlined":true, "clickEvent":{"action": "suggest_command","value": "/scoreboard players set #dev.i_amount fvar "}}]
 
 function fixer:calculate_region
+
+kill @e[type=magma_cube,tag=fixer.corner2]
+summon magma_cube ~ ~ ~ {NoGravity:1b,Silent:1b,Invulnerable:1b,Glowing:1b,NoAI:1b,Size:1,Tags:["fixer.corner2"]}

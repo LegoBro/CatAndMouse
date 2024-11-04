@@ -15,7 +15,7 @@ execute store result storage fixer minX int 1 run scoreboard players get #fixer.
 execute store result storage fixer minY int 1 run scoreboard players get #fixer.min.y fvar
 execute store result storage fixer minZ int 1 run scoreboard players get #fixer.min.z fvar
 
-tellraw @s [{"color":"yellow","text":"Min Position: "},{"interpret":false,"nbt":"min","storage":"fixer","color":"gold"}]
+#tellraw @s [{"color":"yellow","text":"Min Position: "},{"interpret":false,"nbt":"min","storage":"fixer","color":"gold"}]
 
 scoreboard players operation #fixer.max.x fvar = #fixer.pos1.x fvar
 scoreboard players operation #fixer.max.y fvar = #fixer.pos1.y fvar
@@ -30,7 +30,7 @@ execute store result storage fixer maxY int 1 run scoreboard players get #fixer.
 execute store result storage fixer maxZ int 1 run scoreboard players get #fixer.max.z fvar
 
 
-tellraw @s [{"color":"yellow","text":"Max Position: "},{"interpret":false,"nbt":"max","storage":"fixer","color":"gold"}]
+#tellraw @s [{"color":"yellow","text":"Max Position: "},{"interpret":false,"nbt":"max","storage":"fixer","color":"gold"}]
 
 ## Size of selection
 scoreboard players operation #fixer.length.x fvar = #fixer.max.x fvar
