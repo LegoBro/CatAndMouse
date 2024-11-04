@@ -6,3 +6,5 @@ scoreboard players add @s energy 10
 execute if score @s energy matches 50.. run scoreboard players set @s energy 50
 
 function tick:player/xp
+
+scoreboard players add @s points 5

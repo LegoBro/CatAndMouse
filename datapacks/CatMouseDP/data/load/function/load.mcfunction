@@ -16,6 +16,7 @@ scoreboard objectives add scoreboard dummy
 # Player values
 scoreboard objectives add rightClick minecraft.used:minecraft.carrot_on_a_stick
 scoreboard objectives add energy dummy
+scoreboard objectives add points dummy
 scoreboard objectives add posX dummy
 scoreboard objectives add posY dummy
 scoreboard objectives add posZ dummy
